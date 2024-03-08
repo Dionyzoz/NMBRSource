@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "properties": {
+    "Birthday": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Email": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "FirstName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Gender": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Initials": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PartnerName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "StartDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Telephone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

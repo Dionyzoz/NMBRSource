@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "EmployeeType": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CreationDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmploymentId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EndDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "InitialStartDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "StartDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CreationDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursFriday": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursFriday2": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursMonday": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursMonday2": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursSaturday": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursSaturday2": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursSunday": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursSunday2": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursThursday": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursThursday2": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursTuesday": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursTuesday2": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursWednesday": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursWednesday2": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ParttimePercentage": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "StartDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Period": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ActionId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ActionName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ActionStatus": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ActionStatusId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "RunAt": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TrackName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TrackStatus": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

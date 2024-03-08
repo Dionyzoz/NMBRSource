@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "HandledDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Period": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

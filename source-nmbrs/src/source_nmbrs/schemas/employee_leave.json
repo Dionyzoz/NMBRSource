@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "properties": {
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Hours": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "UsageType": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Start": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "End": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "StartHours": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EndHours": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Soort": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

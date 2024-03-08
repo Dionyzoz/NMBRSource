@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "Birthday": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "FirstName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Gender": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Initials": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

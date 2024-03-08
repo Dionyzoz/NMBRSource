@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "RunId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "IsLocked": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "Number": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "PeriodEnd": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "PeriodStart": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "RunAt": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

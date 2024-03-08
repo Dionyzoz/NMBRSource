@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "City": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CountryISOCode": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Default": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "HouseNumber": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HouseNumberAddition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "PostalCode": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "StateProvince": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Street": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

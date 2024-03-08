@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "BIC": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "City": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "IBAN": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Number": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

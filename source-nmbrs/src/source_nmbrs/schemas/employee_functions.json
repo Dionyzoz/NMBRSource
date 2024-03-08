@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CreationDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Function": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "RecordId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "StartPeriod": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "StartYear": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

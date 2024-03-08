@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "CorrectionTijdvakEnd": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CorrectionTijdvakStart": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PensionExportID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Period": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "SentAt": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SerialNumber": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

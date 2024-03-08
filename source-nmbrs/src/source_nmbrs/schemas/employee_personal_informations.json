@@ -1,0 +1,227 @@
+{
+  "type": "object",
+  "properties": {
+    "Birthday": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "BSN": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "BurgerlijkeStaat": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CountryOfBirthISOCode": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CreationDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "DeceasedDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "DisplayName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmailPrivate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmailWork": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmployeeNumber": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "FirstName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Gender": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "IdentificationNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "IdentificationType": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "InCaseOfEmergency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "InCaseOfEmergencyPhone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "InCaseOfEmergencyRelation": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Initials": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "LastName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Naamstelling": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "NationalityCode": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Nickname": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PartnerLastName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PartnerPrefix": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PlaceOfBirth": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Prefix": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "StartPeriod": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "StartYear": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "TelephoneMobilePrivate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TelephoneMobileWork": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TelephoneOther": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TelephonePrivate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TelephoneWork": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

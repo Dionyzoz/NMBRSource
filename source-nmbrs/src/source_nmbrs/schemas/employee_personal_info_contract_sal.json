@@ -1,0 +1,161 @@
+{
+  "type": "object",
+  "properties": {
+    "BSN": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Birthday": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "City": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ContractEndDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ContractHours": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ContractStartDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmailPrivate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmailWork": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmployeeID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmployeeNumber": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "FirstName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Gender": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "HourlyWage": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HouseNumber": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HouseNumberAddition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "LastName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PostCode": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Prefix": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SalaryType": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SalaryValue": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Street": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TelephoneMobilePrivate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TelephoneMobileWork": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TelephonePrivate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TelephoneWork": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

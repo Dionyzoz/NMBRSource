@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "properties": {
+    "FiscalWage": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Period": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "WorkCostAvailableSpace": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "WorkCostBase": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "WorkCostEstimated": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "WorkCostFinancial": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "WorkCostPaid": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "WorkCostPayroll": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "WorkCostToPay": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "Step": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "StepDescription": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "StepValue": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

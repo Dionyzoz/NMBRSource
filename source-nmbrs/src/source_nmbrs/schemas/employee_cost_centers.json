@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CostcenterId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CostCenter": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Default": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "Period": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Percentage": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

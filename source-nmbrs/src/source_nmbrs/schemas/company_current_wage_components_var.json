@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "Code": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Period": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

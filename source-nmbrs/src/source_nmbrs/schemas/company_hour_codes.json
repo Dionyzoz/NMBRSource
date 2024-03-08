@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Code": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "type": "object",
+  "properties": {
+    "Brand": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CatalogValue": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CO2Emissions": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ContractDuration": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ContractLeaseCompany": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ContractNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ContributionNotDeductible": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ContributionPrivatePercentage": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ContributionPrivateUse": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EndDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "FirstResgistrationDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "LeasingPriceMonth": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "LicensePlate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "MaxMileage": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Period": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Model": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PriceLessMileage": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "PriceMoreMileage": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ReasonNoContribution": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "StartDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

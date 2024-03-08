@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "RunId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmployeeNumber": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Number": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "DisplayName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmployeeType": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

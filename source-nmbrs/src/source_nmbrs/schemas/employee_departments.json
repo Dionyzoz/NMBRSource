@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "Code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CreationDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "StartPeriod": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "StartYear": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

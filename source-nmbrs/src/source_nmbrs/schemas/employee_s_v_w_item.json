@@ -1,0 +1,155 @@
+{
+  "type": "object",
+  "properties": {
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CreationDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "StartPeriod": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "StartYear": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "InfluenceObligedInsurance": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Wao_Wia": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "Ww": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "Zw": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "IncomeRelatedContributionZvw": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CodeZvw": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "RiskGroupId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "RiskGroupCode": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "SectorId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "SectorCode": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "WageCostBenefitCode": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EndPeriod": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EndYear": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CAOId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CAOCode": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CAODescription": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmploymentType": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CompanyID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "PhaseClassification": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "EmploymentSequenceTaxId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

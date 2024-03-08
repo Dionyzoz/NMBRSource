@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ContractID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ContractType": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CreationDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmployementType": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmploymentSequenceTaxId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EndDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Indefinite": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "PhaseClassification": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "HoursPerWeek": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "StartDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TrialPeriod": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "WrittenContract": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "Name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Email": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Gender": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Function": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "MobilePhone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Number": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

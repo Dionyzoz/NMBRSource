@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "Scale": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ScalePercentageMax": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ScalePercentageMin": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ScaleValue": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "SchaalDescription": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

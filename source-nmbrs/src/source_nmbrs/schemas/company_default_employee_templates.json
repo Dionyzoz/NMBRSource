@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "DefaultEmployeeTemplateId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

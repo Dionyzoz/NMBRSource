@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "properties": {
+    "AbsenceCause": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "AbsenceCauseId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "AbsenceId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Comment": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Dossier": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "DossierNr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "End": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Percentage": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "RegistrationEndDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "RegistrationStartDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Start": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

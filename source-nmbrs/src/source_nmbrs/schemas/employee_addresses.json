@@ -1,0 +1,101 @@
+{
+  "type": "object",
+  "properties": {
+    "City": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CountryISOCode": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CreationDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EndPeriod": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "EndYear": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HouseNumber": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HouseNumberAddition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "PostalCode": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "StartPeriod": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "StartYear": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "StateProvince": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Street": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Period": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Code": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Guid": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Number": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Default": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "ScheduleModel_Code": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ScheduleModel_Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "WageModel_Code": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "WageModel_Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "HoursModel_Code": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursModel_Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "HoursReservationModel_Code": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "HoursReservationModel_Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "LeaveModel_Code": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "LeaveModel_Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ReservationModel_Code": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ReservationModel_Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "BlnUseProvisional": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    }
+  }
+}

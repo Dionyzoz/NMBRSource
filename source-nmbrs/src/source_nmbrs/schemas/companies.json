@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Email": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "FaxNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "KvkNr": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "LoonaangifteTijdvak": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Number": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PhoneNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Website": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

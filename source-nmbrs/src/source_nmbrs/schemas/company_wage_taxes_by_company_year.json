@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "CompanyId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "CorrectionTijdvakEnd": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CorrectionTijdvakStart": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "LoonaangifteID": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "PaymentReference": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Period": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "SentAt": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SerialNumber": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TijdvakEnd": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TijdvakStart": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TotalGeneral": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "Year": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "intYear": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}
