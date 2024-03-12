@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "EmployeeId": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "DecMedewerkerVerlofStartSaldo": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "DecMedewerkerVerlofCurrSaldo": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

@@ -4,9 +4,18 @@ connectionSpecification:
   title: Nmbrs Spec
   type: object
   required:
-    - TODO
+    - username
+    - token
+    - domain
   properties:
-    # 'TODO: This schema defines the configuration required for the source. This usually involves metadata such as database and/or authentication information.':
-    TODO:
+    username:
       type: string
-      description: describe me
+      description: the username for NMBRS authentication
+
+    token:
+      type: string
+      description: the token for NMBRS authentication
+
+    domain:
+      type: string
+      description: the domain for NMBRS authentication

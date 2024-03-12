@@ -1,4 +1,3 @@
-from abc import ABC
 import re
 from typing import Any, Iterable, List, Mapping, Optional, Tuple, Union
 from airbyte_cdk.models.airbyte_protocol import SyncMode
@@ -8,25 +7,45 @@ import requests
 import itertools
 
 
-# Basic full refresh stream
-class NmbrsStream(HttpStream, ABC):
-    def __init__(self, employee, name):
-        url_base = "https://api.nmbrs.nl/soap/v3/"
-        self.url_base = (
-            url_base
-            + ("CompanyService.asmx" if employee else "EmployeeService.asmx")
-            + "/"
-        )
-        self.soap_action_url = self.url_base.rstrip(".asmx")
-        self.api_call = self.path()
-        self.soap_action = self.soap_action_url + self.api_call
+# Example usage:
 
-        self.name = name # schema name
+# Create a logger
+
+# Basic full refresh stream
+class NmbrsStream(HttpStream):
+    primary_key = None
+
+    url_base = "https://api.nmbrs.nl/soap/v3/"
+    @property
+    def name(self):
+        return self._name
+
+    @property
+    def use_cache(self):
+        return self._use_cache
+
+    def __init__(self, employee, name, path, config, cache=False, **kwargs):
+        self.username = config["username"]
+        self.token = config["token"]
+        self.domain = config["domain"]
+
+        self.soap_action_url = self.url_base + ("CompanyService" if not employee else "EmployeeService")
+        self.api_call = path
+        self._path = "CompanyService.asmx" if not employee else "EmployeeService.asmx"
+        self.body_tag = "com" if not employee else "emp"
+        self.soap_action = self.soap_action_url + '/' + self.api_call
+
+        self._name = name # schema name
+        self._use_cache = cache
+        super().__init__(**kwargs)
 
     def next_page_token(
         self, response: requests.Response
     ) -> Optional[Mapping[str, Any]]:
         return None
+
+    def path(self, *args, **kwargs) -> str:
+        return self._path
 
     def parse_response(
         self, response: requests.Response, **kwargs
@@ -68,7 +87,7 @@ class NmbrsStream(HttpStream, ABC):
 
         extract_data_recursive(root)
 
-        yield all_data
+        return all_data
 
     def request_headers(
         self,
@@ -82,6 +101,10 @@ class NmbrsStream(HttpStream, ABC):
             "Accept": "text/xml",
         }
         return headers
+    
+    @property
+    def http_method(self, *args, **kwargs):
+        return "POST"
 
     def request_body_data(
         self,
@@ -91,51 +114,56 @@ class NmbrsStream(HttpStream, ABC):
     ) -> Optional[Union[Mapping[str, Any], str]]:
         if stream_slice is None:
             return f"""
-            <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:emp="https://api.nmbrs.nl/soap/v3/EmployeeService">
-                <soap:Header>
-                    <emp:AuthHeaderWithDomain>
-                        <emp:Username>{self.username}</emp:Username>
-                        <emp:Token>{self.token}</emp:Token>
-                        <emp:Domain>{self.domain}</emp:Domain>
-                    </emp:AuthHeaderWithDomain>
-                </soap:Header>
-                <soap:Body>
-                    <emp:{self.api_call}/>
-                </soap:Body>
-            </soap:Envelope>
+            <soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:{self.body_tag}="{self.soap_action_url}">
+                <soapenv:Header>
+                    <{self.body_tag}:AuthHeaderWithDomain>
+                        <{self.body_tag}:Username>{self.username}</{self.body_tag}:Username>
+                        <{self.body_tag}:Token>{self.token}</{self.body_tag}:Token>
+                        <{self.body_tag}:Domain>{self.domain}</{self.body_tag}:Domain>
+                    </{self.body_tag}:AuthHeaderWithDomain>
+                </soapenv:Header>
+                <soapenv:Body>
+                    <{self.body_tag}:{self.api_call}/>
+                </soapenv:Body>
+            </soapenv:Envelope>
             """
 
         body = (
-            +""">
-                    <emp:"""
+            self.api_call + f""">
+                    <{self.body_tag}:"""
         )
 
         for key, value in stream_slice.items():
-            body += f"""{key}>{value}</emp:{key}>
-                    <emp:"""
+            body += f"""{key}>{value}</{self.body_tag}:{key}>
+                    <{self.body_tag}:"""
 
-        body = body[:-8] + f"</emp:{self.api_call}"
+        body = body[:-8] + f"</{self.body_tag}:{self.api_call}"
 
-        return f"""
-         <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:emp="https://api.nmbrs.nl/soap/v3/EmployeeService">
-            <soap:Header>
-                <emp:AuthHeaderWithDomain>
-                    <emp:Username>{self.username}</emp:Username>
-                    <emp:Token>{self.token}</emp:Token>
-                    <emp:Domain>{self.domain}</emp:Domain>
-                </emp:AuthHeaderWithDomain>
-            </soap:Header>
-            <soap:Body>
-                <emp:{body}>
-            </soap:Body>
-        </soap:Envelope>
+        x = f"""
+         <soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:{self.body_tag}="{self.soap_action_url}">
+            <soapenv:Header>
+                <{self.body_tag}:AuthHeaderWithDomain>
+                    <{self.body_tag}:Username>{self.username}</{self.body_tag}:Username>
+                    <{self.body_tag}:Token>{self.token}</{self.body_tag}:Token>
+                    <{self.body_tag}:Domain>{self.domain}</{self.body_tag}:Domain>
+                </{self.body_tag}:AuthHeaderWithDomain>
+            </soapenv:Header>
+            <soapenv:Body>
+                <{self.body_tag}:{body}>
+            </soapenv:Body>
+        </soapenv:Envelope>
         """
+        print(x)
+        return x
+    
 
 
-class NmbrsSliceStream(NmbrsStream, ABC):
-    def __init__(self, partitions: Tuple[Tuple[str, Tuple[str]]], **kwargs: any):
+class NmbrsSliceStream(NmbrsStream):
+    def __init__(self, partitions: Tuple[Tuple[str, Tuple[str]]] = (), **kwargs: any):
         super().__init__(**kwargs)
         self.generators = []
+        for partition in partitions:
+            self.generators.append(lambda _partition=partition: ((_partition[0], part) for part in _partition[1]))
 
     def stream_slices(
         self,
@@ -145,19 +173,19 @@ class NmbrsSliceStream(NmbrsStream, ABC):
         stream_state: Optional[Mapping[str, Any]] = None,
     ) -> Iterable[Optional[Mapping[str, Any]]]:
         for combination in itertools.product(
-            generator() for generator in self.generators
+            *[generator() for generator in self.generators]
         ):
-            yield combination
+            print(combination)
+            yield dict(combination)
 
 
-class NmbrsSubStream(NmbrsStream, ABC):
+class NmbrsSubStream(NmbrsSliceStream):
     def __init__(self, parents: Tuple[Tuple[str, NmbrsStream]], **kwargs: Any):
         super().__init__(**kwargs)
         self.parents = parents
-        self.generators.append(self.id_generators())
+        self.id_generators()
 
     def id_generators(self):
-        generators = []
         for idName, parentStream in self.parents:
 
             def generator():
@@ -170,27 +198,8 @@ class NmbrsSubStream(NmbrsStream, ABC):
                     )
 
                     for record in parent_records:
-                        yield {idName: record["Id"]}
+                        yield (idName, record.get("Id", record["ID"]))
 
-            generators.append(generator)
+            self.generators.append(generator)
 
 
-class Customers(NmbrsStream):
-    """
-    TODO: Change class name to match the table/data source this stream corresponds to.
-    """
-
-    # TODO: Fill in the primary key. Required. This is usually a unique field in the stream, like an ID or a timestamp.
-    primary_key = "customer_id"
-
-    def path(
-        self,
-        stream_state: Mapping[str, Any] = None,
-        stream_slice: Mapping[str, Any] = None,
-        next_page_token: Mapping[str, Any] = None,
-    ) -> str:
-        """
-        TODO: Override this method to define the path this stream corresponds to. E.g. if the url is https://example-api.com/v1/customers then this
-        should return "customers". Required.
-        """
-        return "customers"

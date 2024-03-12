@@ -1,0 +1,801 @@
+{
+  "type": "CATALOG",
+  "catalog": {
+    "streams": [
+      {
+        "name": "companies",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyId": { "type": ["null", "number"] },
+            "Email": { "type": ["null", "string"] },
+            "FaxNumber": { "type": ["null", "string"] },
+            "KvkNr": { "type": ["null", "string"] },
+            "LoonaangifteTijdvak": { "type": ["null", "string"] },
+            "Name": { "type": ["null", "string"] },
+            "Number": { "type": ["null", "string"] },
+            "PhoneNumber": { "type": ["null", "string"] },
+            "Website": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_type",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "EmployeeType": { "type": ["null", "number"] },
+            "Description": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "company_current_adresses",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "City": { "type": ["null", "string"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "CountryISOCode": { "type": ["null", "string"] },
+            "Default": { "type": ["null", "boolean"] },
+            "HouseNumber": { "type": ["null", "number"] },
+            "HouseNumberAddition": { "type": ["null", "string"] },
+            "Id": { "type": ["null", "number"] },
+            "PostalCode": { "type": ["null", "string"] },
+            "StateProvince": { "type": ["null", "string"] },
+            "Street": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "company_current_bank_acccount",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "BIC": { "type": ["null", "string"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "City": { "type": ["null", "string"] },
+            "Description": { "type": ["null", "string"] },
+            "IBAN": { "type": ["null", "string"] },
+            "Id": { "type": ["null", "number"] },
+            "Name": { "type": ["null", "string"] },
+            "Number": { "type": ["null", "number"] },
+            "Type": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "contact_person",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Name": { "type": ["null", "string"] },
+            "Email": { "type": ["null", "string"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "Gender": { "type": ["null", "string"] },
+            "Function": { "type": ["null", "string"] },
+            "MobilePhone": { "type": ["null", "string"] },
+            "Number": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "company_cost_centers",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Code": { "type": ["null", "string"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "Description": { "type": ["null", "string"] },
+            "Id": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "company_cost_units",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Code": { "type": ["null", "number"] },
+            "Description": { "type": ["null", "string"] },
+            "Id": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "company_default_employee_templates",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyId": { "type": ["null", "number"] },
+            "DefaultEmployeeTemplateId": { "type": ["null", "string"] },
+            "Description": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "company_hour_codes",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyId": { "type": ["null", "number"] },
+            "Code": { "type": ["null", "number"] },
+            "Description": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "labour_agreement",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyId": { "type": ["null", "number"] },
+            "Period": { "type": ["null", "number"] },
+            "Code": { "type": ["null", "number"] },
+            "Year": { "type": ["null", "number"] },
+            "Id": { "type": ["null", "number"] },
+            "Guid": { "type": ["null", "string"] },
+            "Number": { "type": ["null", "number"] },
+            "Description": { "type": ["null", "string"] },
+            "Default": { "type": ["null", "boolean"] },
+            "ScheduleModel_Code": { "type": ["null", "number"] },
+            "ScheduleModel_Description": { "type": ["null", "string"] },
+            "WageModel_Code": { "type": ["null", "number"] },
+            "WageModel_Description": { "type": ["null", "string"] },
+            "HoursModel_Code": { "type": ["null", "number"] },
+            "HoursModel_Description": { "type": ["null", "string"] },
+            "HoursReservationModel_Code": { "type": ["null", "number"] },
+            "HoursReservationModel_Description": { "type": ["null", "string"] },
+            "LeaveModel_Code": { "type": ["null", "number"] },
+            "LeaveModel_Description": { "type": ["null", "string"] },
+            "ReservationModel_Code": { "type": ["null", "number"] },
+            "ReservationModel_Description": { "type": ["null", "string"] },
+            "BlnUseProvisional": { "type": ["null", "boolean"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "payroll_workflow",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyId": { "type": ["null", "number"] },
+            "Period": { "type": ["null", "number"] },
+            "Year": { "type": ["null", "number"] },
+            "ActionId": { "type": ["null", "number"] },
+            "ActionName": { "type": ["null", "string"] },
+            "ActionStatus": { "type": ["null", "string"] },
+            "ActionStatusId": { "type": ["null", "number"] },
+            "RunAt": { "type": ["null", "string"] },
+            "TrackName": { "type": ["null", "string"] },
+            "TrackStatus": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "pension_info",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CorrectionTijdvakEnd": { "type": ["null", "string"] },
+            "CorrectionTijdvakStart": { "type": ["null", "string"] },
+            "PensionExportID": { "type": ["null", "number"] },
+            "Period": { "type": ["null", "number"] },
+            "SentAt": { "type": ["null", "string"] },
+            "SerialNumber": { "type": ["null", "number"] },
+            "Status": { "type": ["null", "string"] },
+            "Year": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "run_info",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "RunId": { "type": ["null", "number"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "Description": { "type": ["null", "string"] },
+            "IsLocked": { "type": ["null", "boolean"] },
+            "Number": { "type": ["null", "number"] },
+            "Year": { "type": ["null", "number"] },
+            "PeriodEnd": { "type": ["null", "number"] },
+            "PeriodStart": { "type": ["null", "number"] },
+            "RunAt": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "run_requests_by_company_year",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "HandledDate": { "type": ["null", "string"] },
+            "Period": { "type": ["null", "number"] },
+            "Status": { "type": ["null", "string"] },
+            "Year": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "company_current_schedules",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "HoursFriday": { "type": ["null", "number"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "HoursFriday2": { "type": ["null", "number"] },
+            "HoursMonday": { "type": ["null", "number"] },
+            "HoursMonday2": { "type": ["null", "number"] },
+            "HoursSaturday": { "type": ["null", "number"] },
+            "HoursSaturday2": { "type": ["null", "number"] },
+            "HoursSunday": { "type": ["null", "number"] },
+            "HoursSunday2": { "type": ["null", "number"] },
+            "HoursThursday": { "type": ["null", "number"] },
+            "HoursThursday2": { "type": ["null", "number"] },
+            "HoursTuesday": { "type": ["null", "number"] },
+            "HoursTuesday2": { "type": ["null", "number"] },
+            "HoursWednesday": { "type": ["null", "number"] },
+            "HoursWednesday2": { "type": ["null", "number"] },
+            "ScheduleCalcMethod": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "company_current_wage_components_var",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Code": { "type": ["null", "number"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "Period": { "type": ["null", "number"] },
+            "Year": { "type": ["null", "number"] },
+            "Id": { "type": ["null", "number"] },
+            "Value": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "company_wage_codes",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Code": { "type": ["null", "number"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "Description": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "company_wage_taxes_by_company_year",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyId": { "type": ["null", "number"] },
+            "CorrectionTijdvakEnd": { "type": ["null", "string"] },
+            "CorrectionTijdvakStart": { "type": ["null", "string"] },
+            "LoonaangifteID": { "type": ["null", "number"] },
+            "PaymentReference": { "type": ["null", "string"] },
+            "Period": { "type": ["null", "number"] },
+            "SentAt": { "type": ["null", "string"] },
+            "SerialNumber": { "type": ["null", "number"] },
+            "Status": { "type": ["null", "string"] },
+            "TijdvakEnd": { "type": ["null", "string"] },
+            "TijdvakStart": { "type": ["null", "string"] },
+            "TotalGeneral": { "type": ["null", "number"] },
+            "Year": { "type": ["null", "number"] },
+            "intYear": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "work_costs_by_company_year",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "FiscalWage": { "type": ["null", "number"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "Period": { "type": ["null", "number"] },
+            "WorkCostAvailableSpace": { "type": ["null", "number"] },
+            "WorkCostBase": { "type": ["null", "number"] },
+            "WorkCostEstimated": { "type": ["null", "number"] },
+            "WorkCostFinancial": { "type": ["null", "number"] },
+            "WorkCostPaid": { "type": ["null", "number"] },
+            "WorkCostPayroll": { "type": ["null", "number"] },
+            "WorkCostToPay": { "type": ["null", "number"] },
+            "Year": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "company_current_wage_components_fix",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Code": { "type": ["null", "number"] },
+            "Period": { "type": ["null", "number"] },
+            "Year": { "type": ["null", "number"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "Id": { "type": ["null", "number"] },
+            "Value": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_absences_v2_by_employee",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "AbsenceCause": { "type": ["null", "string"] },
+            "AbsenceCauseId": { "type": ["null", "number"] },
+            "AbsenceId": { "type": ["null", "number"] },
+            "Comment": { "type": ["null", "string"] },
+            "Dossier": { "type": ["null", "string"] },
+            "DossierNr": { "type": ["null", "number"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "End": { "type": ["null", "string"] },
+            "Percentage": { "type": ["null", "number"] },
+            "RegistrationEndDate": { "type": ["null", "string"] },
+            "RegistrationStartDate": { "type": ["null", "string"] },
+            "Start": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_addresses",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "City": { "type": ["null", "string"] },
+            "CompanyID": { "type": ["null", "number"] },
+            "CountryISOCode": { "type": ["null", "string"] },
+            "CreationDate": { "type": ["null", "string"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "EndPeriod": { "type": ["null", "number"] },
+            "EndYear": { "type": ["null", "number"] },
+            "HouseNumber": { "type": ["null", "number"] },
+            "HouseNumberAddition": { "type": ["null", "string"] },
+            "Id": { "type": ["null", "number"] },
+            "PostalCode": { "type": ["null", "string"] },
+            "StartPeriod": { "type": ["null", "number"] },
+            "StartYear": { "type": ["null", "number"] },
+            "StateProvince": { "type": ["null", "string"] },
+            "Street": { "type": ["null", "string"] },
+            "Type": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_children",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Birthday": { "type": ["null", "string"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "FirstName": { "type": ["null", "string"] },
+            "Gender": { "type": ["null", "string"] },
+            "Id": { "type": ["null", "number"] },
+            "Initials": { "type": ["null", "string"] },
+            "Name": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_contracts",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyID": { "type": ["null", "number"] },
+            "ContractID": { "type": ["null", "number"] },
+            "ContractType": { "type": ["null", "number"] },
+            "CreationDate": { "type": ["null", "string"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "EmployementType": { "type": ["null", "number"] },
+            "EmploymentSequenceTaxId": { "type": ["null", "number"] },
+            "EndDate": { "type": ["null", "string"] },
+            "Indefinite": { "type": ["null", "boolean"] },
+            "PhaseClassification": { "type": ["null", "boolean"] },
+            "HoursPerWeek": { "type": ["null", "number"] },
+            "StartDate": { "type": ["null", "string"] },
+            "TrialPeriod": { "type": ["null", "string"] },
+            "WrittenContract": { "type": ["null", "boolean"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_cost_centers",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyId": { "type": ["null", "number"] },
+            "Code": { "type": ["null", "string"] },
+            "Description": { "type": ["null", "string"] },
+            "CostcenterId": { "type": ["null", "number"] },
+            "CostCenter": { "type": ["null", "string"] },
+            "Default": { "type": ["null", "boolean"] },
+            "Period": { "type": ["null", "number"] },
+            "Year": { "type": ["null", "number"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "Id": { "type": ["null", "number"] },
+            "Percentage": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_departments",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Code": { "type": ["null", "string"] },
+            "CompanyID": { "type": ["null", "number"] },
+            "CreationDate": { "type": ["null", "string"] },
+            "Description": { "type": ["null", "string"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "Id": { "type": ["null", "number"] },
+            "StartPeriod": { "type": ["null", "number"] },
+            "StartYear": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_employments",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyID": { "type": ["null", "number"] },
+            "CreationDate": { "type": ["null", "string"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "EmploymentId": { "type": ["null", "number"] },
+            "EndDate": { "type": ["null", "string"] },
+            "InitialStartDate": { "type": ["null", "string"] },
+            "StartDate": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_lease_cars_by_company_year_p",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Brand": { "type": ["null", "string"] },
+            "CatalogValue": { "type": ["null", "number"] },
+            "CO2Emissions": { "type": ["null", "string"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "ContractDuration": { "type": ["null", "number"] },
+            "ContractLeaseCompany": { "type": ["null", "string"] },
+            "ContractNumber": { "type": ["null", "string"] },
+            "ContributionNotDeductible": { "type": ["null", "number"] },
+            "ContributionPrivatePercentage": { "type": ["null", "number"] },
+            "ContributionPrivateUse": { "type": ["null", "number"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "EndDate": { "type": ["null", "string"] },
+            "FirstResgistrationDate": { "type": ["null", "string"] },
+            "Id": { "type": ["null", "number"] },
+            "LeasingPriceMonth": { "type": ["null", "number"] },
+            "LicensePlate": { "type": ["null", "string"] },
+            "MaxMileage": { "type": ["null", "number"] },
+            "Period": { "type": ["null", "number"] },
+            "Year": { "type": ["null", "number"] },
+            "Model": { "type": ["null", "string"] },
+            "PriceLessMileage": { "type": ["null", "number"] },
+            "PriceMoreMileage": { "type": ["null", "number"] },
+            "ReasonNoContribution": { "type": ["null", "number"] },
+            "StartDate": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_partners",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Birthday": { "type": ["null", "string"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "Email": { "type": ["null", "string"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "FirstName": { "type": ["null", "string"] },
+            "Gender": { "type": ["null", "string"] },
+            "Id": { "type": ["null", "number"] },
+            "Initials": { "type": ["null", "string"] },
+            "PartnerName": { "type": ["null", "string"] },
+            "StartDate": { "type": ["null", "string"] },
+            "Telephone": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_performance_reviews",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Appraisal": { "type": ["null", "string"] },
+            "AppraisalID": { "type": ["null", "number"] },
+            "AppraisalName": { "type": ["null", "string"] },
+            "Manager": { "type": ["null", "string"] },
+            "CompanyID": { "type": ["null", "number"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "ID": { "type": ["null", "number"] },
+            "ManagerID": { "type": ["null", "number"] },
+            "NextReviewDate": { "type": ["null", "string"] },
+            "Note": { "type": ["null", "string"] },
+            "PerformanceReviews": { "type": ["null", "string"] },
+            "ReviewDate": { "type": ["null", "string"] },
+            "Type": { "type": ["null", "string"] },
+            "TypeID": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_personal_info_contract_sal",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "BSN": { "type": ["null", "string"] },
+            "Birthday": { "type": ["null", "string"] },
+            "City": { "type": ["null", "string"] },
+            "CompanyID": { "type": ["null", "number"] },
+            "ContractEndDate": { "type": ["null", "string"] },
+            "ContractHours": { "type": ["null", "number"] },
+            "ContractStartDate": { "type": ["null", "string"] },
+            "EmailPrivate": { "type": ["null", "string"] },
+            "EmailWork": { "type": ["null", "string"] },
+            "EmployeeID": { "type": ["null", "number"] },
+            "EmployeeNumber": { "type": ["null", "number"] },
+            "FirstName": { "type": ["null", "string"] },
+            "Gender": { "type": ["null", "string"] },
+            "HourlyWage": { "type": ["null", "number"] },
+            "HouseNumber": { "type": ["null", "number"] },
+            "HouseNumberAddition": { "type": ["null", "string"] },
+            "LastName": { "type": ["null", "string"] },
+            "PostCode": { "type": ["null", "string"] },
+            "Prefix": { "type": ["null", "string"] },
+            "SalaryType": { "type": ["null", "string"] },
+            "SalaryValue": { "type": ["null", "number"] },
+            "Street": { "type": ["null", "string"] },
+            "TelephoneMobilePrivate": { "type": ["null", "string"] },
+            "TelephoneMobileWork": { "type": ["null", "string"] },
+            "TelephonePrivate": { "type": ["null", "string"] },
+            "TelephoneWork": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_personal_informations",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Birthday": { "type": ["null", "string"] },
+            "BSN": { "type": ["null", "string"] },
+            "BurgerlijkeStaat": { "type": ["null", "string"] },
+            "CompanyID": { "type": ["null", "number"] },
+            "CountryOfBirthISOCode": { "type": ["null", "string"] },
+            "CreationDate": { "type": ["null", "string"] },
+            "DeceasedDate": { "type": ["null", "string"] },
+            "DisplayName": { "type": ["null", "string"] },
+            "EmailPrivate": { "type": ["null", "string"] },
+            "EmailWork": { "type": ["null", "string"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "EmployeeNumber": { "type": ["null", "number"] },
+            "FirstName": { "type": ["null", "string"] },
+            "Gender": { "type": ["null", "string"] },
+            "Id": { "type": ["null", "number"] },
+            "IdentificationNumber": { "type": ["null", "string"] },
+            "IdentificationType": { "type": ["null", "number"] },
+            "InCaseOfEmergency": { "type": ["null", "string"] },
+            "InCaseOfEmergencyPhone": { "type": ["null", "string"] },
+            "InCaseOfEmergencyRelation": { "type": ["null", "string"] },
+            "Initials": { "type": ["null", "string"] },
+            "LastName": { "type": ["null", "string"] },
+            "Naamstelling": { "type": ["null", "string"] },
+            "NationalityCode": { "type": ["null", "number"] },
+            "Nickname": { "type": ["null", "string"] },
+            "PartnerLastName": { "type": ["null", "string"] },
+            "PartnerPrefix": { "type": ["null", "string"] },
+            "PlaceOfBirth": { "type": ["null", "string"] },
+            "Prefix": { "type": ["null", "string"] },
+            "StartPeriod": { "type": ["null", "number"] },
+            "StartYear": { "type": ["null", "number"] },
+            "TelephoneMobilePrivate": { "type": ["null", "string"] },
+            "TelephoneMobileWork": { "type": ["null", "string"] },
+            "TelephoneOther": { "type": ["null", "string"] },
+            "TelephonePrivate": { "type": ["null", "string"] },
+            "TelephoneWork": { "type": ["null", "string"] },
+            "Title": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_s_v_w_item",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "EmployeeId": { "type": ["null", "number"] },
+            "Id": { "type": ["null", "number"] },
+            "CreationDate": { "type": ["null", "string"] },
+            "StartPeriod": { "type": ["null", "number"] },
+            "StartYear": { "type": ["null", "number"] },
+            "InfluenceObligedInsurance": { "type": ["null", "number"] },
+            "Wao_Wia": { "type": ["null", "boolean"] },
+            "Ww": { "type": ["null", "boolean"] },
+            "Zw": { "type": ["null", "boolean"] },
+            "IncomeRelatedContributionZvw": { "type": ["null", "number"] },
+            "CodeZvw": { "type": ["null", "string"] },
+            "RiskGroupId": { "type": ["null", "number"] },
+            "RiskGroupCode": { "type": ["null", "number"] },
+            "SectorId": { "type": ["null", "number"] },
+            "SectorCode": { "type": ["null", "number"] },
+            "WageCostBenefitCode": { "type": ["null", "number"] },
+            "EndPeriod": { "type": ["null", "number"] },
+            "EndYear": { "type": ["null", "number"] },
+            "CAOId": { "type": ["null", "number"] },
+            "CAOCode": { "type": ["null", "number"] },
+            "CAODescription": { "type": ["null", "string"] },
+            "EmploymentType": { "type": ["null", "number"] },
+            "CompanyID": { "type": ["null", "number"] },
+            "PhaseClassification": { "type": ["null", "boolean"] },
+            "EmploymentSequenceTaxId": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_salaries",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyID": { "type": ["null", "number"] },
+            "CreationDate": { "type": ["null", "string"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "ID": { "type": ["null", "number"] },
+            "StartDate": { "type": ["null", "string"] },
+            "Type": { "type": ["null", "number"] },
+            "Value": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_schedules",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyID": { "type": ["null", "number"] },
+            "CreationDate": { "type": ["null", "string"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "HoursFriday": { "type": ["null", "number"] },
+            "HoursFriday2": { "type": ["null", "number"] },
+            "HoursMonday": { "type": ["null", "number"] },
+            "HoursMonday2": { "type": ["null", "number"] },
+            "HoursSaturday": { "type": ["null", "number"] },
+            "HoursSaturday2": { "type": ["null", "number"] },
+            "HoursSunday": { "type": ["null", "number"] },
+            "HoursSunday2": { "type": ["null", "number"] },
+            "HoursThursday": { "type": ["null", "number"] },
+            "HoursThursday2": { "type": ["null", "number"] },
+            "HoursTuesday": { "type": ["null", "number"] },
+            "HoursTuesday2": { "type": ["null", "number"] },
+            "HoursWednesday": { "type": ["null", "number"] },
+            "HoursWednesday2": { "type": ["null", "number"] },
+            "Id": { "type": ["null", "number"] },
+            "ParttimePercentage": { "type": ["null", "number"] },
+            "StartDate": { "type": ["null", "string"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "Id": { "type": ["null", "number"] },
+            "Number": { "type": ["null", "number"] },
+            "DisplayName": { "type": ["null", "string"] },
+            "CompanyId": { "type": ["null", "number"] },
+            "EmployeeType": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_per_run",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "CompanyId": { "type": ["null", "number"] },
+            "Year": { "type": ["null", "number"] },
+            "RunId": { "type": ["null", "number"] },
+            "EmployeeId": { "type": ["null", "number"] },
+            "EmployeeNumber": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_leave",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "EmployeeId": { "type": ["null", "number"] },
+            "Description": { "type": ["null", "string"] },
+            "Hours": { "type": ["null", "number"] },
+            "UsageType": { "type": ["null", "string"] },
+            "Start": { "type": ["null", "string"] },
+            "End": { "type": ["null", "string"] },
+            "StartHours": { "type": ["null", "number"] },
+            "EndHours": { "type": ["null", "number"] },
+            "Type": { "type": ["null", "string"] },
+            "Soort": { "type": ["null", "string"] },
+            "Status": { "type": ["null", "string"] },
+            "Id": { "type": ["null", "number"] },
+            "Year": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "employee_absence",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "EmployeeId": { "type": ["null", "number"] },
+            "AbsenceId": { "type": ["null", "number"] },
+            "Comment": { "type": ["null", "string"] },
+            "Percentage": { "type": ["null", "number"] },
+            "Start": { "type": ["null", "string"] },
+            "RegistrationStartDate": { "type": ["null", "string"] },
+            "End": { "type": ["null", "string"] },
+            "Dossier": { "type": ["null", "string"] },
+            "Dossiernr": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      },
+      {
+        "name": "leave_balance",
+        "json_schema": {
+          "type": "object",
+          "properties": {
+            "EmployeeId": { "type": ["null", "number"] },
+            "DecMedewerkerVerlofStartSaldo": { "type": ["null", "number"] },
+            "DecMedewerkerVerlofCurrSaldo": { "type": ["null", "number"] }
+          }
+        },
+        "supported_sync_modes": ["full_refresh"]
+      }
+    ]
+  }
+}
